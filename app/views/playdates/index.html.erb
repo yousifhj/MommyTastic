@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Playdates</h1>
+
+<table>
+
+  <tbody>
+    <% @playdate.each do |playdates| %>
+      <ul>
+        <li><%= playdates.activity %></li>
+        <li><%= playdates.location %></li>
+        <li><%= playdates.date %></li>
+        <li><%= playdates.time %></li>
+        <li><%= link_to 'Show', playdates %></li>
+        <li><%= link_to 'Edit', edit_playdate_path(playdates) %></li>
+        <li><%= link_to 'Destroy', playdates, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+      </ul>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Playdate', new_playdate_path %>
