@@ -3,8 +3,8 @@ class CreatePlaydates < ActiveRecord::Migration[6.0]
     create_table :playdates do |t|
       t.string :activity
       t.string :location
-      t.integer :date
-      t.integer :time
+      t.date :date
+      t.time :time
 
       t.timestamps
     end

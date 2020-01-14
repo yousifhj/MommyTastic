@@ -32,8 +32,8 @@ ActiveRecord::Schema.define(version: 2020_01_14_062243) do
   create_table "playdates", force: :cascade do |t|
     t.string "activity"
     t.string "location"
-    t.integer "date"
-    t.integer "time"
+    t.date "date"
+    t.time "time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
